@@ -19,4 +19,12 @@ describe('Buy', () => {
     expect(buy.total).toBe(190);
   });
 
+  test('buy one potter 1, one potter 2, and one potter 3', () => {
+    const buy = new Buy();
+    buy.choose(1);
+    buy.choose(2);
+    buy.choose(3);
+    expect(buy.total).toBe(270);
+  });
+
 });
