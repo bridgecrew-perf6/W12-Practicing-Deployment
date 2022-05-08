@@ -8,13 +8,10 @@ export class Buy {
   }
 
   get total() {
-    if (this.numofep === 1){
-      this._total += 100;
-    }else if (this.numofep === 2){
-      this._total += 200;
+    this._total += 100 * this.numofep;
+    if (this.numofep === 2){
       this._total *= 0.95;
     }else if (this.numofep === 3){
-      this._total += 300;
       this._total *= 0.9;
     }
     return this._total;
