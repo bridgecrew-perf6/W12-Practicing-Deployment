@@ -41,6 +41,7 @@ describe('Buy', () => {
     const buy = new Buy();
     buy.choose(1);
     buy.choose(2);
+    buy.choose(2);
     expect(buy.total).toBe(290);
   });
 
