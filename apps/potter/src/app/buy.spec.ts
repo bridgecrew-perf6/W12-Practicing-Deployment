@@ -34,7 +34,7 @@ describe('Buy', () => {
     buy.choose(3);
     buy.choose(4);
     buy.choose(5);
-    expect(buy.total).toBe(270);
+    expect(buy.total).toBe(375);
   });
 
 });

@@ -13,6 +13,10 @@ export class Buy {
       this._total *= 0.95;
     }else if (this.numofep === 3){
       this._total *= 0.9;
+    }else if (this.numofep === 4){
+      this._total *= 0.8;
+    }else if (this.numofep >= 5){
+      this._total *= 0.75;
     }
     return this._total;
   }
