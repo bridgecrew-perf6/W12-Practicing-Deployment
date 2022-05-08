@@ -7,9 +7,11 @@ export class Buy {
 
   choose(episode: number) {
     if (this.count[episode] === 0){
+      this.count[episode] ++;
       this.numofbook ++;
       this.numofep ++;
     }else{
+      this.count[episode] ++;
       this.numofbook ++;
     }
   }
