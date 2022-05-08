@@ -27,4 +27,14 @@ describe('Buy', () => {
     expect(buy.total).toBe(270);
   });
 
+  test('buy one potter 1-5', () => {
+    const buy = new Buy();
+    buy.choose(1);
+    buy.choose(2);
+    buy.choose(3);
+    buy.choose(4);
+    buy.choose(5);
+    expect(buy.total).toBe(270);
+  });
+
 });
